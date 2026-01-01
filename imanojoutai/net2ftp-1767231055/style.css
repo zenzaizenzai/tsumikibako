@@ -1,0 +1,165 @@
+* { margin : 0 ; padding : 0 ; }
+
+body{ 
+	background: #8C7767;
+	width: 100%;
+}
+
+
+
+
+body,TD{
+font-family: Verdana,Chicago,osaka,"sans-serif";
+font-size: 90%;
+color: #634027;
+line-height: 170%;
+}
+
+
+/* リンクの設定 */
+A:link   {color:#634027;}             /* リンク色 */
+A:visited{color:#634027;}             /* 既読リンク色 */
+A:hover  {color:#cccccc;              /* カーソルがリンクの上に来た時の色 */
+          text-decoration:underline;} /* カーソルがリンクの上に来たとき下線を出す */
+A{text-decoration: none;              /* リンクの下線を消す */
+  font-weight : none;}                /* リンクを太くする。 */
+
+
+
+
+div#page {
+	margin: 10px auto 0;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-right-color: #333333;
+	border-bottom-color: #333333;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	position: relative;
+	width: 800px;
+
+	background-color: #FFFFFF;
+}
+
+
+div#head {
+padding: 1em 1em 2em;
+} 
+
+div#title{
+font-size:250%;       /* 文字の大きさ */
+font-weight:lighter;  /* 文字を細くする */
+}
+
+div#main {
+
+	padding: 20px 0px 20px 20px;
+	background: #ffffff;
+	margin-left: 160px;
+
+}
+
+div#main A:link   {color:#999911;}             /* リンク色 */
+
+div#main p {
+	margin: 0px 0px 20px 40px;
+}
+div#main ul {
+	margin-left: 60px;
+	margin-bottom: 3em;
+	margin-right: 30px;
+}
+
+div#menu {
+	position: absolute;
+	left : 0;
+
+	font-size: 90%;
+	padding: 0px;
+	width:150px;
+}
+div#menu ul{
+	margin: 10px 0px 0px 10px;
+	padding: 10px;
+	border: 1px solid #BA7D50;
+}
+div#menu li{
+	color: #A38067;
+	padding: 5px;
+	list-style: none;
+}
+
+div#foot {
+	border-top: 0px solid #333333;
+	padding: 5px;
+	text-align: center;
+	clear: both;
+	font-size: 80%;
+
+}
+strong {
+	color: #CC3333;
+}
+
+h1 {
+	font-size: 150%;
+	margin: 5px;
+	padding: 0px;
+}
+h2 {
+	font-size: 100%;
+	margin: 20px;
+	padding: 0;
+	clear: both;
+}
+h3 {
+	font-size: 100%;
+	margin: 20px 20px 20px 40px;
+	border-bottom: 0x dashed #999999;
+	padding: 0px 0px 5px;
+	font-weight: normal;
+
+	clear: both;
+}
+dl {
+	margin: 0px 0px 50px 40px;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 10px;
+}
+
+
+
+.imgbox {
+	margin: 0px 0px 0px 0px;
+	text-align: center;
+
+}
+.imgbox img{
+	border: 0px solid #666666;
+}
+.imgbox_l{
+	margin: 0px 0px 1em 40px;
+
+	float: left;
+
+}
+.imgbox_l img{
+	border: 0px solid #666666;
+}
+.imgbox_f {
+	margin: 0px 10px 1em;
+
+	float: right;
+}
+.imgbox_f img{
+	border: 0px solid #666666;
+}
+
+.right{
+text-align: right;
+padding-right: 3em;
+}
