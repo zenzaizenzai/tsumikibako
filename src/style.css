@@ -29,6 +29,12 @@ body {
   padding: 0 2rem;
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 /* Sections */
 section {
   padding: 6rem 0;
@@ -68,16 +74,19 @@ header {
 }
 
 .logo-text {
-  font-size: 5rem;
+  font-size: clamp(1.8rem, 12vw, 5rem);
   letter-spacing: 0.1em;
   color: var(--color-bg-paper);
   text-transform: lowercase;
+  line-height: 1.2;
 }
 
 .hero-sub {
-  margin-top: 3rem;
-  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  font-size: clamp(0.9rem, 4.5vw, 1.1rem);
   color: rgba(255, 255, 255, 0.8);
+  padding: 0 1.5rem;
+  line-height: 1.6;
 }
 
 /* Content Area - Paper Style */
@@ -158,10 +167,18 @@ header {
   color: var(--color-brand-dark);
 }
 
+@media (max-width: 768px) {
+  .content-paper {
+    padding: 2.5rem 1.5rem;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+  }
+}
+
 /* Menu */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
   margin-top: 3rem;
 }
@@ -220,17 +237,13 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .logo-text {
-    font-size: 2.5rem;
-    letter-spacing: 0.05em;
-  }
-
-  .content-paper {
-    padding: 2rem;
+  section {
+    padding: 4rem 0;
   }
 
   .info-list li {
     grid-template-columns: 1fr;
     gap: 0.3rem;
+    padding: 1rem 0;
   }
 }
