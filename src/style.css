@@ -117,10 +117,25 @@ header {
   border-radius: 2px;
 }
 
+.text-block-center {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 .seasonal-text {
   font-size: 1.1rem;
   line-height: 2;
   color: var(--color-brand-dark);
+}
+
+@media (max-width: 768px) {
+
+  .seasonal-text,
+  .text-block-center p,
+  .notice-content {
+    display: inline-block;
+    text-align: left;
+  }
 }
 
 /* Important Notice */
