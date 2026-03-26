@@ -31,7 +31,7 @@ body::before {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  background-image: linear-gradient(rgba(77, 49, 32, 0.85), rgba(77, 49, 32, 0.85)), url('/img/IMG_5481.jpg');
+  background-image: linear-gradient(rgba(77, 49, 32, 0.85), rgba(77, 49, 32, 0.85)), url('/img/IMG_5533.JPG');
   background-size: cover;
   background-position: center;
 }
