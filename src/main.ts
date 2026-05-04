@@ -25,6 +25,19 @@ window.addEventListener('DOMContentLoaded', () => {
     hero.classList.add('visible');
   }
 
+  // --- Expiry Notice Handling (お知らせの自動非表示) ---
+  const expiryElements = document.querySelectorAll<HTMLElement>('[data-expiry-date]');
+  const now = new Date();
+  expiryElements.forEach(el => {
+    const expiryStr = el.getAttribute('data-expiry-date');
+    if (expiryStr) {
+      const expiryDate = new Date(expiryStr);
+      if (now >= expiryDate) {
+        el.style.display = 'none';
+      }
+    }
+  });
+
   // --- Directions Slideshow ---
   const slideshowEl = document.getElementById('directions-slideshow');
   if (!slideshowEl) return;
